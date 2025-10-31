@@ -1,1 +1,77 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* =====================================
+   Avenir Next LT Pro - Font Definitions
+===================================== */
+
+@font-face {
+  font-family: 'Avenir Next LT Pro';
+  src: url('assets/fonts/AvenirNextLTPro/AvenirNextLTPro-Regular.woff2') format('woff2'),
+       url('assets/fonts/AvenirNextLTPro/AvenirNextLTPro-Regular.woff') format('woff'),
+       url('assets/fonts/AvenirNextLTPro/AvenirNextLTPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Next LT Pro';
+  src: url('assets/fonts/AvenirNextLTPro/AvenirNextLTPro-Bold.woff2') format('woff2'),
+       url('assets/fonts/AvenirNextLTPro/AvenirNextLTPro-Bold.woff') format('woff'),
+       url('assets/fonts/AvenirNextLTPro/AvenirNextLTPro-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Base font setup */
+body {
+  font-family: 'Avenir Next LT Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Font Style Utilities ===== */
+.avenir-regular-16-white {
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.avenir-regular-16-black {
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+
+.avenir-regular-18-black {
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
+}
+
+.avenir-bold-14-red {
+  font-weight: 700;
+  font-size: 14px;
+  color: #CD0000;
+}
+
+.avenir-bold-16-red {
+  font-weight: 700;
+  font-size: 16px;
+  color: #CD0000;
+}
+
+.avenir-bold-20-black {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000000;
+}
+
+.avenir-bold-28-red {
+  font-weight: 700;
+  font-size: 28px;
+  color: #CD0000;
+}
+

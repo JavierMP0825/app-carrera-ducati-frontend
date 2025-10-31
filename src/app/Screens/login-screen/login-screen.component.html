@@ -1,0 +1,69 @@
+<section class="login-wrapper d-flex flex-column flex-lg-row align-items-stretch">
+  <!-- Columna izquierda -->
+  <div class="login-left d-flex flex-column justify-content-center align-items-center">
+    <img src="assets/img/logo-marcas.svg" alt="Logo Carrera Ducati" class="logo-marca" />
+
+    <div class="login-img-container">
+      <img src="assets/img/login-img.png" alt="Imagen Login Carrera Ducati" class="login-img" />
+    </div>
+  </div>
+
+  <!-- Columna derecha -->
+  <div class="login-right d-flex flex-column justify-content-center">
+    <div class="login-box mx-auto">
+      <h2 class="login-title mb-4">INICIO DE SESIÓN</h2>
+
+      <form (ngSubmit)="login()" #form="ngForm" novalidate>
+        <mat-form-field appearance="outline" class="custom-field w-100 mb-3">
+          <mat-label>Correo electrónico</mat-label>
+          <input
+            matInput
+            type="email"
+            name="username"
+            [(ngModel)]="username"
+            autocomplete="username"
+            required
+          />
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" class="custom-field w-100 mb-3">
+          <mat-label>Contraseña</mat-label>
+          <input
+            matInput
+            [type]="type"
+            name="password"
+            [(ngModel)]="password"
+            autocomplete="current-password"
+            required
+          />
+          <button
+            mat-icon-button
+            matSuffix
+            type="button"
+            (click)="togglePassword()"
+            aria-label="Mostrar contraseña"
+          >
+            <img src="assets/img/ver-icon.svg" alt="Ver" class="ver-icon" />
+          </button>
+        </mat-form-field>
+
+        <div class="text-start mb-3">
+          <span class="recover-password">Recupera tu contraseña</span>
+        </div>
+
+        <button mat-raised-button color="warn" class="btn-login w-100 mb-3" type="submit">
+          INGRESAR
+        </button>
+
+        <div class="text-center avenir-regular-16-black">
+          ¿Aún no tienes una cuenta?
+          <a class="avenir-bold-16-red register-link" (click)="goToRegister()">Regístrate</a>
+        </div>
+      </form>
+
+      <div class="footer-liston mt-4">
+        <img src="assets/img/liston-img.svg" alt="Listón" />
+      </div>
+    </div>
+  </div>
+</section>
