@@ -75,3 +75,59 @@ body {
   color: #CD0000;
 }
 
+/* ===== Overrides globales de Angular Material ===== */
+
+/* Fuerza texto negro en campos */
+.mdc-text-field,
+.mat-mdc-input-element,
+.mdc-floating-label {
+  color: #000000 !important;
+}
+
+/* Fondo blanco siempre */
+.mdc-text-field--outlined,
+.mat-mdc-form-field {
+  background-color: #ffffff !important;
+}
+
+/* Borde negro en todos los estados */
+.mdc-notched-outline__leading,
+.mdc-notched-outline__notch,
+.mdc-notched-outline__trailing {
+  border-color: #000000 !important;
+}
+
+/* Hover o focus también negro */
+.mdc-text-field--focused .mdc-notched-outline__leading,
+.mdc-text-field--focused .mdc-notched-outline__notch,
+.mdc-text-field--focused .mdc-notched-outline__trailing {
+  border-color: #000000 !important;
+}
+
+/* Error (vacío o inválido) en rojo Ducati */
+.mdc-text-field--invalid .mdc-notched-outline__leading,
+.mdc-text-field--invalid .mdc-notched-outline__notch,
+.mdc-text-field--invalid .mdc-notched-outline__trailing {
+  border-color: #CD0000 !important;
+}
+
+/* Evita el color morado del tema */
+.mat-mdc-form-field-focus-overlay {
+  background-color: transparent !important;
+}
+
+/* El label no se vuelve morado */
+.mdc-floating-label--float-above {
+  color: #000000 !important;
+}
+
+/* Texto dentro del input al enfocar */
+.mat-mdc-input-element:focus {
+  color: #000000 !important;
+}
+
+/* Placeholder negro */
+::placeholder {
+  color: #000000 !important;
+  opacity: 1;
+}
